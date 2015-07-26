@@ -21,4 +21,4 @@ RUN service nginx stop
 ADD ./ops/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 EXPOSE 80
-CMD /usr/bin/supervisord -n
+CMD ["/usr/bin/supervisord",  "-n"]
